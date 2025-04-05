@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">projetws</string>
+    <string-array name="villes">
+        <item>Agadir</item>
+        <item>Casablanca</item>
+        <item>Fès</item>
+        <item>Marrakech</item>
+        <item>Meknès</item>
+        <item>Oujda</item>
+        <item>Rabat</item>
+        <item>Tanger</item>
+        <item>Tétouan</item>
+        <item>Laâyoune</item>
+        <item>Guelmim</item>
+        <item>Errachidia</item>
+        <item>El Jadida</item>
+        <item>Khouribga</item>
+        <item>Béni Mellal</item>
+        <item>Nador</item>
+        <item>Ouarzazate</item>
+        <item>Kénitra</item>
+        <item>Settat</item>
+        <item>Safi</item>
+    </string-array>
+
+</resources>

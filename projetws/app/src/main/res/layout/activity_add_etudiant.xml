@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddEtudiant">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="146dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/img"
+            android:gravity="center"
+            android:padding="10dp">
+
+        </RelativeLayout>
+
+        <!-- Photo Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/text"
+            android:text="Photo:"
+            android:layout_marginTop="8dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:id="@+id/photoImageView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_person_placeholder"
+                android:background="#EEEEEE" />
+
+            <Button
+                android:id="@+id/takePhotoButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prendre photo"
+                android:backgroundTint="#748B58"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="8dp" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nom : " />
+
+        <EditText
+            android:id="@+id/nom"
+            style="@style/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prenom :" />
+
+        <EditText
+            android:id="@+id/prenom"
+            style="@style/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <!-- Date de naissance Field -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/text"
+            android:text="Date de naissance:"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:id="@+id/dateNaissanceTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sélectionner une date"
+                android:padding="8dp"
+                android:background="#EEEEEE" />
+
+            <Button
+                android:id="@+id/selectDateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choisir"
+                android:backgroundTint="#748B58"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ville" />
+
+        <Spinner
+            android:id="@+id/ville"
+            style="@style/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/villes" />
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sexe :" />
+
+        <RadioGroup
+            style="@style/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/m"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="homme" />
+
+            <RadioButton
+                android:id="@+id/f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="femme" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#748B58"
+            android:text="Add" />
+        <Button
+            android:id="@+id/btnAfficher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#748B58"
+            android:text="Afficher les étudiants"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</ScrollView>
